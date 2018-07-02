@@ -28,14 +28,15 @@ app.use(express.static(
 //   console.log(`${now}: ${req.method} ${req.url}`);
 //   next();
 // });
+
 //
-app.use((req, res, next)=>{
-  res.render('maintenance.hbs', {
-    pageTitle:'Maintenance Page',
-    message:'Welcome to this awesome site'
-  });
-  
-});
+// app.use((req, res, next)=>{
+//   res.render('maintenance.hbs', {
+//     pageTitle:'Maintenance Page',
+//     message:'Welcome to this awesome site'
+//   });
+//
+// });
 
 
 app.get('/', (req, res) =>{
